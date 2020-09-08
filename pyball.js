@@ -23,7 +23,7 @@ var pipes = [];
 var pipeDelayStart = 2.5 * 100; //amount of time between pipe spawns
 var pipeDelay = 0;
 var pipeWidth = 30;
-var pipeColor = "#7CB9E8 ";
+var pipeColor = "#50FF50 ";
 var gapSizeDef = 150;
 var gapStartPoint = 200;
 
@@ -171,27 +171,27 @@ function drawBird()
 {
 	ctx.beginPath();
 	ctx.arc(bx, by, birdSize, 0, Math.PI*2);
-	ctx.fillStyle = "#AB274F   ";
+	ctx.fillStyle = "#F62817   ";
 	ctx.fill();
 	ctx.closePath();
 }
 
 function drawScore()
 {
-	ctx.fillStyle = "#"
+	ctx.fillStyle = "#FFF"
 	ctx.font = "32px Arial";
 	ctx.textAlign = "center"
 	ctx.fillText(score, canvas.width / 2, 70);
 	if(!started)
   {
     ctx.font = "25px Arial "
-    ctx.fillText("You lost!", canvas.width / 2, canvas.height / 2.5 - 50)
+    ctx.fillText("You lost!", canvas.width / 2, canvas.height / 3.5 - 50)
 		ctx.font = "25px Arial"
-		ctx.fillText("Better Luck Next Time!", canvas.width / 2, canvas.height / 2.3)
+		ctx.fillText("Better Luck Next Time!", canvas.width / 2, canvas.height /3)
 		ctx.fillText("Press any key to try again.", canvas.width / 2, canvas.height / 1.1)
 	}
   {
-    ctx.fillStyle = "#"
+    ctx.fillStyle = "#FFFF";
     ctx.font = "16px Comic Sans MS"
     ctx.fillText("-Urjit Tembhurnikar", canvas.width / 1.2, canvas.height /1.03)
   }
