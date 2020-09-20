@@ -1,4 +1,4 @@
-# Pyball
+# Playball
 
 
 Play in an infinite loop!
